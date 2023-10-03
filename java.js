@@ -6,8 +6,8 @@ var incorrectBtn1 = document.getElementById("btn1")
 var incorrectBtn2 = document.getElementById("btn2")
 var incorrectBtn3 = document.getElementById("btn3")
 var correctBtn4 = document.getElementById("btn4")
-var correctBtn5 = document.getElementById("btn5")
-var incorrectBtn6 = document.getElementById("btn6")
+var incorrectBtn5 = document.getElementById("btn5")
+var correctBtn6 = document.getElementById("btn6")
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
@@ -44,8 +44,8 @@ incorrectBtn2.addEventListener('click', incorrect)
 incorrectBtn3.addEventListener('click', incorrect)
 correctBtn4.addEventListener('click', correct1)
 
-correctBtn5.addEventListener('click',correct2)
-incorrectBtn6.addEventListener('click', incorrect)
+incorrectBtn5.addEventListener('click',incorrect)
+correctBtn6.addEventListener('click', correct2)
 
 
 
@@ -77,13 +77,13 @@ function correct1(){
 
 
 function setNextQuestion(){
-    questionElement.innerText = "Is Java  the same as Javascript?",
+    questionElement.innerText = "Java is the same as Javascript?",
     incorrectBtn1.style.display = 'none',
     incorrectBtn2.style.display = 'none',
     incorrectBtn3.style.display = 'none',
     correctBtn4.style.display = 'none',
-    correctBtn5.style.display = 'block',
-    incorrectBtn6.style.display = 'block',
+    incorrectBtn5.style.display = 'block',
+    correctBtn6.style.display = 'block',
     
     nextButton.style.display = 'none'
     
@@ -91,16 +91,16 @@ function setNextQuestion(){
 };
 
 function correct2(){
-    countDownEl.innerHTML = "";
-    questionElement.innerText = "You Win!",
+    
+    questionElement.innerText = "Correct! You Win!",
     incorrectBtn1.style.display = 'none',
     incorrectBtn2.style.display = 'none',
     incorrectBtn3.style.display = 'none',
     correctBtn4.style.display = 'none',
-    correctBtn5.style.display = 'none',
-    incorrectBtn6.style.display = 'none',
-    nextButton.style.display = 'none',
-    event.stopPropagation();
+    incorrectBtn5.style.display = 'none',
+    correctBtn6.style.display = 'none',
+    nextButton.style.display = 'none';
+    
     
     
    
