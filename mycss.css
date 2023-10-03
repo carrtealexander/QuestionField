@@ -1,4 +1,3 @@
-
 *{
 
     font-family: Arial, Helvetica, sans-serif;
@@ -10,16 +9,11 @@ html{
     justify-content: center;
  
     
-    :root{
-
-        --hue-neutral:2001;
-        --hue-wrong:0;
-        --hue-corect:145;
-    }
+   
    
 }
 body{
-    --hue:var(--hue-neutral);
+    
     display: center;
     background-color:
      aqua;
@@ -64,7 +58,7 @@ color: brown;
     border: none;
     background: none;
 }
-.time{
+#time{
     display: flex;
     height: 50%;
     width:10%;
@@ -87,7 +81,7 @@ text-align: center;
 
 
 }
-.btn{
+#btn1{
 border: solid 1px;
 border-radius: 1em;
 background: peru;
@@ -99,19 +93,97 @@ cursor: pointer;
 transition: all 0.3s;
 
 
+
 }
+
+#btn2{
+    border: solid 1px;
+    border-radius: 1em;
+    background: peru;
+    width: 100%;
+    margin: 2px;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    
+    
+    }
+
+
+    #btn3{
+        border: solid 1px;
+        border-radius: 1em;
+        background: peru;
+        width: 100%;
+        margin: 2px;
+        padding: 10px;
+        text-align: left;
+        cursor: pointer;
+        transition: all 0.3s;
+        
+        
+        
+        }
+
+
+
+        #btn4{
+            border: solid 1px;
+            border-radius: 1em;
+            background: peru;
+            width: 100%;
+            margin: 2px;
+            padding: 10px;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s;
+            
+            
+            
+            }
+            #btn5{
+                border: solid 1px;
+                border-radius: 1em;
+                background: peru;
+                width: 100%;
+                margin: 2px;
+                padding: 10px;
+                text-align: left;
+                cursor: pointer;
+                transition: all 0.3s;
+                display: none;
+                
+                
+                
+                }
+                #btn6{
+                    border: solid 1px;
+                    border-radius: 1em;
+                    background: peru;
+                    width: 100%;
+                    margin: 2px;
+                    padding: 10px;
+                    text-align: left;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    display: none;
+                    
+                    
+                    }
 
 .btn:hover{
     background-color: beige;
 
 
 }
-.submit{
+.next{
     
     width: fit-content;
     display: inline-flex;
 }
-#submitBtn{
+#nextBtn{
     border: solid 1px;
     border-radius: 1em;
     background: rgb(139, 207, 241);
@@ -121,12 +193,16 @@ transition: all 0.3s;
     padding: 10px;
     transition: all 0.3s;
     cursor: pointer;
+    display: none;
+
+   
     
 
 }
 
-#submitBtn:hover{
+#nextBtn:hover{
     background-color: beige;
+   
     
 
 
