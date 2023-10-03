@@ -7,7 +7,7 @@ var incorrectBtn2 = document.getElementById("btn2")
 var incorrectBtn3 = document.getElementById("btn3")
 var correctBtn4 = document.getElementById("btn4")
 var correctBtn5 = document.getElementById("btn5")
-var correctBtn6 = document.getElementById("btn6")
+var incorrectBtn6 = document.getElementById("btn6")
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
@@ -27,7 +27,7 @@ if (time <0) {
 };
 
 
-}; 
+}; 400;
 
 
 
@@ -42,6 +42,9 @@ incorrectBtn1.addEventListener('click', incorrect)
 incorrectBtn2.addEventListener('click', incorrect)
 incorrectBtn3.addEventListener('click', incorrect)
 correctBtn4.addEventListener('click', correct1)
+
+correctBtn5.addEventListener('click',correct2)
+incorrectBtn6.addEventListener('click', incorrect)
 
 
 
@@ -60,8 +63,12 @@ function incorrect(){
 
 
 function correct1(){
-    questionElement.innerText = "Correct!"
-    answerButtonsElement.innerText = "Great Job!",
+    questionElement.innerText = "Correct!",
+    incorrectBtn1.style.display = 'none',
+    incorrectBtn2.style.display = 'none',
+    incorrectBtn3.style.display = 'none',
+    correctBtn4.style.display = 'none',
+   
     nextButton.style.display = 'block',
     nextButton.innerText = "Next";
 
@@ -70,11 +77,28 @@ function correct1(){
 
 function setNextQuestion(){
     questionElement.innerText = "Is Java  the same as Javascript?",
-    answerButtonsElement.innerText = ("True "+ "or" + " False"),
+    incorrectBtn1.style.display = 'none',
+    incorrectBtn2.style.display = 'none',
+    incorrectBtn3.style.display = 'none',
+    correctBtn4.style.display = 'none',
+    correctBtn5.style.display = 'block',
+    incorrectBtn6.style.display = 'block',
     
     nextButton.style.display = 'none'
     
     
+};
+
+function correct2(){
+    questionElement.innerText = "Correct!",
+    incorrectBtn1.style.display = 'none',
+    incorrectBtn2.style.display = 'none',
+    incorrectBtn3.style.display = 'none',
+    correctBtn4.style.display = 'none',
+   
+    nextButton.style.display = 'block',
+    nextButton.innerText = "Next";
+
 };
 
 
