@@ -99,7 +99,9 @@ function correct2(){
     correctBtn4.style.display = 'none',
     incorrectBtn5.style.display = 'none',
     correctBtn6.style.display = 'none',
-    nextButton.style.display = 'none';
+    nextButton.style.display = 'none',
+    countDownEl.style.display ='none'
+   
     
     
     
