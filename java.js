@@ -24,7 +24,8 @@ if (time <0) {
     alert("Times Up - Refresh to try again!"),
     clearInterval();
     countDownEl.innerHTML = null;
-};
+}
+
 
 
 }; 400;
@@ -90,15 +91,21 @@ function setNextQuestion(){
 };
 
 function correct2(){
-    questionElement.innerText = "Correct!",
+    countDownEl.innerHTML = "";
+    questionElement.innerText = "You Win!",
     incorrectBtn1.style.display = 'none',
     incorrectBtn2.style.display = 'none',
     incorrectBtn3.style.display = 'none',
     correctBtn4.style.display = 'none',
+    correctBtn5.style.display = 'none',
+    incorrectBtn6.style.display = 'none',
+    nextButton.style.display = 'none',
+    event.stopPropagation();
+    
+    
    
-    nextButton.style.display = 'block',
-    nextButton.innerText = "Next";
 
 };
+
 
 
