@@ -12,7 +12,7 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
 
-setInterval(updateCountdown,100)
+setInterval(updateCountdown,1000)
 
 function updateCountdown(){
 const minutes  = Math.floor(time /60);
