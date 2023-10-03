@@ -50,7 +50,10 @@ correctBtn4.addEventListener('click', correct1)
 
 function incorrect(){
     questionElement.innerText ="Incorrect!",
-    answerButtonsElement.innerText = "Game Over - Refresh to try again!"
+    answerButtonsElement.innerText = "Game Over - Refresh to try again!",
+    alert("Incorrect! - Refresh to try again!"),
+    clearInterval();
+    countDownEl.innerHTML = null;
 
 
 };
@@ -73,6 +76,5 @@ function setNextQuestion(){
     
     
 };
-
 
 
